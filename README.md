@@ -1,8 +1,15 @@
 # AlgoLab
+This repository contains my solutions to the problems from the Algorithms Lab course at ETH Zürich. Each problem follows this structure:
 
-This repository contains my solutions to the exercises and problems from the Algorithms Lab course at ETH Zürich.
+```
+problem_name/
+├── public/           # Contains test cases
+├── src/
+│   └── main.cpp      # Solution implementation
+└── this.pdf          # Problem statement
+```
 
-## Course Structure
+## Problems
 
 Each week consists of 4 exercises and 1 problem of the week (POW). Below is a table of contents for all weeks:
 
