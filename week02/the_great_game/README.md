@@ -1,7 +1,3 @@
-### Problem Description
-
-"The Great Game" is a board game played by Sherlock Holmes and Professor Moriarty. The game is played on a board with n positions (1 to n), where some positions are connected by transitions. Two meeples (red and black) start at given positions. Players alternate moving a meeple along one transition, with specific rules for which meeple to move based on the number of turns played. The game ends when a meeple reaches the target position (n), determining the winner. The task is to determine who has a winning strategy given the board layout and starting positions.
-
 
 ### Solution Concept
 
@@ -22,9 +18,13 @@ If red can reach faster, Sherlock wins
 If black can reach faster, Moriarty wins
 If they can reach in the same number of moves, the winner depends on whether this number is odd or even
 
-### Running Time
-Test set 1 (25 pts / 3.500 s) : Correct answer      (0.0s)
-Test set 2 (25 pts / 3.500 s) : Correct answer      (0.001s)
-Test set 3 (25 pts / 3.500 s) : Correct answer      (0.041s)
-Test set 4 (25 pts / 3.500 s) : Correct answer      (2.663s)
+
+### Test Results
+
+| Test Set | Points | Time Limit | Result | Execution Time |
+|----------|--------|------------|--------|----------------|
+| 1 | 25 pts | 3.500 s | Correct | 0.000 s |
+| 2 | 25 pts | 3.500 s | Correct | 0.001 s |
+| 3 | 25 pts | 3.500 s | Correct | 0.041 s |
+| 4 | 25 pts | 3.500 s | Correct | 2.663 s |
 
