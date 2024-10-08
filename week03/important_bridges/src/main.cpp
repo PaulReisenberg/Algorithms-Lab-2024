@@ -27,8 +27,6 @@ void algorithm(int n, int m, Graph& g) {
   
   
   typedef boost::graph_traits<Graph>::edge_iterator EdgeIt;
-  typedef boost::graph_traits<Graph>::vertex_descriptor Vertex;
-  typedef boost::graph_traits<Graph>::edge_descriptor Edge;
   
   vector<int> componentsize(num_comps);
   EdgeIt ebeg, eend;
