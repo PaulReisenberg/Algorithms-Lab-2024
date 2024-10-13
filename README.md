@@ -18,7 +18,7 @@ Each week consists of 4 exercises and 1 problem of the week (POW). Below is a ta
 | 1 | TBA | TBA | TBA | TBA | TBA |
 | 2 | [The Great Game](week02/the_great_game) | TBA | TBA | TBA | TBA |
 | 3 | [First Steps With BGL](week03/first_steps_with_bgl) | [Buddy Selection](week03/buddy_selection) | [Ant Challenge](week03/ant_challenge) | [Important Bridges](week03/important_bridges) | [Iron Islands](week03/iron_islands) |
-| 4 | [Hit](week04/hit) | [First Hit](week04/first_hit) | TBA | TBA | TBA |
+| 4 | [Hit](week04/hit) | [First Hit](week04/first_hit) | TBA | [Hiking Map](week04/hiking_map) | TBA |
 | 5 | TBA | TBA | TBA | TBA | TBA |
 | 6 | TBA | TBA | TBA | TBA | TBA |
 | 7 | TBA | TBA | TBA | TBA | TBA |
