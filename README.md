@@ -24,5 +24,5 @@ Each week consists of 4 exercises and 1 problem of the week (POW). Below is a ta
 | 7 | TBA | TBA | TBA | TBA | [Octopussy](week07/octopussy/) |
 | 8 | TBA | TBA | TBA | TBA | [Attack on King's Landing](week08/attack_on_kings_landing) |
 | 9 | TBA | TBA | TBA | TBA | TBA |
-| 10| [Placing Knights](week10/placing_knights) | TBA | TBA | TBA | [Hermione Granger](week10/hermione_granger) |
+| 10| [Placing Knights](week10/placing_knights) | [Real Estate](week10/real_estate) | TBA | TBA | [Hermione Granger](week10/hermione_granger) |
 
