@@ -20,7 +20,7 @@ Each week consists of 4 exercises and 1 problem of the week (POW). Below is a ta
 | 3 | [First Steps With BGL](week03/first_steps_with_bgl) | [Buddy Selection](week03/buddy_selection) | [Ant Challenge](week03/ant_challenge) | [Important Bridges](week03/important_bridges) | [Iron Islands](week03/iron_islands) |
 | 4 | [Hit](week04/hit) | [First Hit](week04/first_hit) | TBA | [Hiking Maps](week04/hiking_maps) | TBA |
 | 5 | [Moving Books](week05/moving_books) | TBA | [Severus Snape](week05/severus_snape) | [Boats](week05/boats) | [Motorcycles](week05/motorcycles) |
-| 6 | TBA | TBA | TBA | TBA | TBA |
+| 6 | [Tiles](week06/tiles/) | TBA | TBA | TBA | TBA |
 | 7 | TBA | TBA | TBA | TBA | [Octopussy](week07/octopussy/) |
 | 8 | TBA | TBA | TBA | TBA | [Attack on King's Landing](week08/attack_on_kings_landing) |
 | 9| [Placing Knights](week09/placing_knights) | [Real Estate Market](week09/real_estate) | [Canteen](week09/canteen) | [Algocoon](week09/algocoon/) | Idefix |
