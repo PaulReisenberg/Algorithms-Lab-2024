@@ -24,5 +24,5 @@ Each week consists of 4 exercises and 1 problem of the week (POW). Below is a ta
 | 7 | TBA | TBA | TBA | TBA | [Octopussy](week07/octopussy/) |
 | 8 | TBA | TBA | TBA | TBA | [Attack on King's Landing](week08/attack_on_kings_landing) |
 | 9| [Placing Knights](week09/placing_knights) | [Real Estate Market](week09/real_estate) | [Canteen](week09/canteen) | [Algocoon](week09/algocoon/) | [Idefix](week09/idefix/) |
-| 10 | TBA | [Rubeus Hagrid](week10/rubeus_hagrid/) | [San Francisco](week10/san_francisco/) | [The Hand’s Tourney](week10/the_hands_tourney/) | [Hermione Granger](week10/hermione_granger)  |
+| 10 | [Asterix and the tour of Gaul](week10/asterix_and_the_tour_of_gaul/) | [Rubeus Hagrid](week10/rubeus_hagrid/) | [San Francisco](week10/san_francisco/) | [The Hand’s Tourney](week10/the_hands_tourney/) | [Hermione Granger](week10/hermione_granger)  |
 
