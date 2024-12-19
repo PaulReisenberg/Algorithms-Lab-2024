@@ -40,7 +40,7 @@ Now we only need to implement it and that's it! The value we are interested in i
 
 ## Learnings
 
-- really nice function: #include <numeric> -> accumulate(vec.begin(), vec.end(), init_val);
+- really nice function: #include \<numeric\> -> accumulate(vec.begin(), vec.end(), init_val);
 - Formalizing the problem first really helps
 
 
