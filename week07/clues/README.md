@@ -23,9 +23,7 @@ For each clue determine if the network has interferences and if the clue can be 
 ### Checking Bipariteness
 
 This step is obvious as the network of stations has to be bipartite. We donote $G_{\leq r}$ as the graph we get when we only keep the edges that are $\leq r$ and we deonte $D^G$ as the Delauney Triangulation of $G$. Helpful to us is the following relation:
-$$
-(1) \ \ \ G_{\leq r} \text{ is bipartite} \Rightarrow  D^G_{\leq r} \text{ is bipartite}
-$$
+$$(1) \ \ \ G_{\leq r} \text{ is bipartite} \Rightarrow  D^G_{\leq r} \text{ is bipartite}$$
 One does not have to be convinced that this implication holds. The better question is why the following holds:
 
 
