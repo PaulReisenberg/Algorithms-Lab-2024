@@ -26,6 +26,6 @@ Each week consists of 4 exercises and 1 problem of the week (POW). Below is a ta
 | 9| [Placing Knights](week09/placing_knights) | [Real Estate Market](week09/real_estate) | [Canteen](week09/canteen) | [Algocoon](week09/algocoon/) | [Idefix](week09/idefix/) |
 | 10 | [Asterix and the tour of Gaul](week10/asterix_and_the_tour_of_gaul/) | [Rubeus Hagrid](week10/rubeus_hagrid/) | [San Francisco](week10/san_francisco/) | [The Hand’s Tourney](week10/the_hands_tourney/) | [Hermione Granger](week10/hermione_granger)  |
 | 11 | [Worldcup](week11/worldcup/)| [Lernaean Hydra](/week11/hydra/)||| [Ceryneian Hind](week11/ceryneian_hind/)|
-| 12 | [Alastor Moody](week12/mad-eye-moody/) | [Return of the Jedi](week12/return_of_the_jedi/) | | |
+| 12 | [Alastor Moody](week12/mad-eye-moody/) | [Return of the Jedi](week12/return_of_the_jedi/) | [Rapunzel](week12/rapunzel/)| |
 | 13 | [Car Sharing](week13/car_sharing/) | [Asterix and the Chariot Race](week13/asterix_chariot_race/) | [Suez](week13/suez/)| | [Schneewittchen](/week13/schneewittchen)
 | 14 | | | | | [Ludo Begman](/week14/ludo_begman)
