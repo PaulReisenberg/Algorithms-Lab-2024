@@ -17,8 +17,8 @@ Each week consists of 4 exercises and 1 problem of the week (POW). Below is a ta
 |------|------------|------------|------------|------------|---------------------|
 | 1 | TBA | TBA | TBA | TBA | TBA |
 | 2 | [The Great Game](week02/the_great_game) | [Defensive Line](week02/defensive_line/) | TBA | TBA | TBA |
-| 3 | [First Steps With BGL](week03/first_steps_with_bgl) | [Buddy Selection](week03/buddy_selection) | [Ant Challenge](week03/ant_challenge) | [Important Bridges](week03/important_bridges) | [Iron Islands](week03/iron_islands) |
-| 4 | [Hit](week04/hit) | [First Hit](week04/first_hit) | [Antenna](week04/antenna/) | [Hiking Maps](week04/hiking_maps) | TBA |
+| 3 | [First Steps With BGL](week03/first_steps_with_bgl) | [Buddy Selection](week03/buddy_selection) | [Ant Challenge](week03/ant_challenge) | [Important Bridges](week03/important_bridges) | [James Bond's Sovereigns](week03/sovereigns) |
+| 4 | [Hit](week04/hit) | [First Hit](week04/first_hit) | [Antenna](week04/antenna/) | [Hiking Maps](week04/hiking_maps) | [Iron Islands](week04/iron_islands) |
 | 5 | [Moving Books](week05/moving_books) | [Asterix the Gaul](week05/asterix_the_gaul/) | [Severus Snape](week05/severus_snape) | [Boats](week05/boats) | [Motorcycles](week05/motorcycles) |
 | 6 | [Tiles](week06/tiles/) | TBA | TBA | TBA | TBA |
 | 7 | [Bistro](week07/bistro) | [H1N1](week07/h1n1/) | [Germs](week07/germs) | [Clues](week07/clues) | [Octopussy](week07/octopussy/) |
