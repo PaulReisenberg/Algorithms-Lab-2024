@@ -24,8 +24,22 @@ Each week consists of 4 exercises and 1 problem of the week (POW). Below is a ta
 | 7 | [Bistro](week07/bistro) | [H1N1](week07/h1n1/) | [Germs](week07/germs) | [Clues](week07/clues) | [Octopussy](week07/octopussy/) |
 | 8 | [Maximize it!](week08/maximize_it/) | [Diet](week08/diet) | [Inball](week08/inball/) | [Casterly Rock](week08/casterly_rock/) | [Attack on King's Landing](week08/attack_on_kings_landing) |
 | 9| [Placing Knights](week09/placing_knights) | [Real Estate Market](week09/real_estate) | [Canteen](week09/canteen) | [Algocoon](week09/algocoon/) | [Idefix](week09/idefix/) |
-| 10 | [Asterix and the tour of Gaul](week10/asterix_and_the_tour_of_gaul/) | [Rubeus Hagrid](week10/rubeus_hagrid/) | [San Francisco](week10/san_francisco/) | [The Hand’s Tourney](week10/the_hands_tourney/) | [Hermione Granger](week10/hermione_granger)  |
+| 10 | [Asterix and the Tour of Gaul](week10/asterix_and_the_tour_of_gaul/) | [Rubeus Hagrid](week10/rubeus_hagrid/) | [San Francisco](week10/san_francisco/) | [The Hand’s Tourney](week10/the_hands_tourney/) | [Hermione Granger](week10/hermione_granger)  |
 | 11 | [Worldcup](week11/worldcup/)| [Lernaean Hydra](/week11/hydra/)| [Sith](week11/sith) | [Asterix in Switzerland](week11/asterix_in_switzerland/) | [Ceryneian Hind](week11/ceryneian_hind/)|
 | 12 | [Alastor Moody](week12/mad-eye-moody/) | [Return of the Jedi](week12/return_of_the_jedi/) | [Rapunzel](week12/rapunzel/)| | [Pied Piper](week12/pied_piper/) |
 | 13 | [Car Sharing](week13/car_sharing/) | [Asterix and the Chariot Race](week13/asterix_chariot_race/) | [Suez](week13/suez/)| | [Schneewittchen](/week13/schneewittchen)
 | 14 | | | | | [Ludo Begman](/week14/ludo_begman)
+
+
+
+## Past Exams
+
+| Year | Exercise 1 | Exercise 2 | Exercise 3 |
+|------|------------|------------|------------|
+|2023|todo|todo|todo|
+|2022|todo|todo|todo|
+
+
+## Additional Problems
+
+- [Shopping Trip](additional/shopping_trip/)
