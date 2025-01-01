@@ -44,4 +44,5 @@ Each week consists of 4 exercises and 1 problem of the week (POW). Below is a ta
 
 - [Shopping Trip](additional/shopping_trip/)
 - [Search Snippets](additional/search_snippets/)
+- [New Tiles](additional/new_tiles/)
 
