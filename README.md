@@ -46,3 +46,4 @@ Each week consists of 4 exercises and 1 problem of the week (POW). Below is a ta
 - [Search Snippets](additional/search_snippets/)
 - [New Tiles](additional/new_tiles/)
 - [Evolution](additional/evolution/)
+- [Fleet Race](additional/fleet_race)
