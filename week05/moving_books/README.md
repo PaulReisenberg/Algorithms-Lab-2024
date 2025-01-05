@@ -1,8 +1,19 @@
-### Solution Concept
+# Moving Books
 
-This problem becomes straightforward once you understand how to reduce the time complexity. The key insight is to first sort both the weights and the strengths. We know that a stronger person can carry all boxes that a less strong or equally strong person can carry. Therefore, to check if all the boxes can be carried to the van in t trips, we only need to verify if weights[i * t] <= strengths[i]. We then find the minimal t using binary search.
+## Problem Description
 
-### Test Results
+We are given $n$ friends with strength $s_i$ and $m$ boxes with weight $w_i$. We must find a mapping $S: [n] \mapsto [m]$ which minimizes 
+$t = max_{i \in [n]} \ | \{j \in [m] | S(j) = i\} |$ under the constraint that $w_i \leq s_{S(i)} \ \forall i \in [m]$.
+
+## Solution Appraoch
+
+We can solve this problem with a greedy appraoch. We itereate through the friends and always assign the heaviest remaining box which this friend can carry. Doing this naively would yield a runtime of $\mathcal{O}(m^2)$, but we can do better. 
+
+What if we first sort both the friends and weights in ascending strength and weight? Well on average we should be faster but the worst case the sorting did not help and we are even worse of with $\mathcal{O}(mlog \ m + nlog \ n \ + \ m^2)$.
+
+We can improve our appraoch by making the following observation: If a solution $t$ exists, then there exists a solution in which the strongest person carries the $t$ heaviest boxes then second strongest the next $t$ boxes and so on. Thus we only need to check if $weights[i * t] \leq strengths[i]$ until $i*t \geq m$. We can find the optimal $t$ with binary search leading to a worst case complextity of $\mathcal{O}(mlog \ m + nlog \ n + log(m)t)$.
+
+## Test Results
 
 | Test Set | Points | Time Limit | Result | Execution Time |
 |----------|--------|------------|--------|----------------|
