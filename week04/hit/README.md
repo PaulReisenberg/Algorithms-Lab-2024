@@ -1,9 +1,15 @@
-### Solution 
+# Hit 
 
-Simple problem requiring only a basic methods from CGAL.
+## Algorithmic Problem Description
+
+Check if a ray intersects with any segment.
+
+## Solution Appraoch
+
+Intrucuctury Problem requiring only a basic methods from CGAL.
 
 
-### Test Results
+## Test Results
 
 | Test Set | Points | Time Limit | Result | Execution Time |
 |----------|--------|------------|--------|----------------|
