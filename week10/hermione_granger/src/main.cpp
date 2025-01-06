@@ -38,7 +38,6 @@ void solve() {
   vector<IPoint> points;
   vector<vector<int>> info(s);
   
-  
   for(int i = 0; i < s; i++) {
     int x, y, m, c, g; 
     cin >> x; cin >> y; cin >> m; cin >> c; cin >> g;
@@ -53,7 +52,7 @@ void solve() {
   for(int i = 0; i < d; i++) {
     int x_i, y_i, f_i; 
     cin >> x_i; cin >> y_i; cin >> f_i;
-    // just give me the code to find the colosest point in the triangulation
+    
     int j = t.nearest_vertex(P(x_i, y_i))->info();
     
     if(nearest_d[j][0] == -1 || nearest_d[j][0] > f_i) {
@@ -72,16 +71,15 @@ void solve() {
   int var = 0;
   for(int i = 0; i < s; i++) {
       if(nearest_d[i][0] == -1) continue;
-      lp.set_c(var, nearest_d[i][0]);// cout << "var: " << var << endl;
-      //cout << "f_i: " << nearest_d[i][0] << endl;
-      lp.set_a(var, 0, nearest_d[i][1]);// cout << "m_i: " <<  nearest_d[i][1] << endl;
-      lp.set_a(var, 1, nearest_d[i][2]);// cout << "c_i: " <<  nearest_d[i][2] << endl;
-      lp.set_a(var, 2, nearest_d[i][3]);// cout << "g_i: " <<  nearest_d[i][3] << endl;
+      lp.set_c(var, nearest_d[i][0]);
+      
+      lp.set_a(var, 0, nearest_d[i][1]);
+      lp.set_a(var, 1, nearest_d[i][2]);
+      lp.set_a(var, 2, nearest_d[i][3]);
       var++;
   }
   
   Solution sol = CGAL::solve_linear_program(lp, ET());
-  //cout << sol << endl;
   if (sol.is_infeasible()) {
     cout << "H" << endl;
   } else if (sol.is_unbounded()) {
