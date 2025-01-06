@@ -1,22 +1,26 @@
+# The Great Game
 
-### Solution Concept
+## Problem Description
 
-My solution uses dynamic programming to determine the optimal play for both players. Here's a brief explanation of the approach:
+The Great Game is played on an n-position board with directed transitions from lower to higher numbered positions, ending at position n (target). Two meeples (red and black) are in play. Holmes moves first with red, then players alternate turns. On even-numbered turns, a player moves their original meeple (Holmes: red, Moriarty: black); on odd-numbered turns, they move the opposite meeple. A move consists of following one transition. The first player to get their meeple (Holmes: red, Moriarty: black) to the target wins. All positions can reach the target through transitions, and meeples can occupy the same position. Who has the winning strategy?
 
-I use a 2D vector dp to store the minimum and maximum number of moves required to reach the target from each position.
-The base case for the target position (n) is initialized with {0,0}.
-Iterating backwards from n-1 to 1, I calculate for each position:
+## Solution Appraoch
 
-The minimum number of moves (best case for the current player)
-The maximum number of moves (worst case for the current player)
+We can exploit the fact that there are only transitions from lower valued fields to higher valued fields using a dynamic programming appraoch. We could denote dp[r][b][even] as the result of the game if the red meeple is at the postion $r$, the black meeple at the position $b$ and it is Sherlock's (even) move. Similarly for uneven. However this is too slow ($\mathcal{O}(n^2)$).
 
+A better appraoch would be to count the number of moves it takes to move a meeple from a position to the target position. dp[i][0] denotes the number of moves if the player belonging to this meeple is moving it from position $i$ (he wants to minimize the number of steps) and dp[i][1] if the oponent is moving it. This allows us to get to a runtime of $\mathcal{O}(n)$.
 
-These values are calculated based on the transitions available from each position and the previously calculated values for the destination positions.
-After filling the dp table, I compare the minimum number of moves for the red and black meeples' starting positions to determine the winner:
+```text
+dp[n][0] = 0
+dp[n][1] = 0
 
-If red can reach faster, Sherlock wins
-If black can reach faster, Moriarty wins
-If they can reach in the same number of moves, the winner depends on whether this number is odd or even
+for p = n-1 to 1:
+    for (p, v) ∈ E:
+        dp[p][0] = min(dp[p][0], 1 + dp[v][1])
+        dp[p][1] = max(dp[p][1], 1 + dp[v][0])
+
+Sherlock wins iff dp[r][0] ≤ dp[b][0]
+```
 
 
 ### Test Results
