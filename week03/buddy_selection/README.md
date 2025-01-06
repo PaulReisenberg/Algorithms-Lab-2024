@@ -1,6 +1,13 @@
-### Solution Concept
+# Buddy Selection
 
-In my solution, I tackle this matching problem using graph theory. I construct a graph where each student is a vertex. Edges are added between vertices if the corresponding students share more than a given number of characteristics. To efficiently count shared characteristics, I sort each student's characteristic list and use a merge-like algorithm for comparison. Once the graph is built, I apply Edmonds' maximum cardinality matching algorithm from the Boost library. This finds the maximum number of pairs that can be formed while satisfying the characteristic threshold. The final step involves checking if this maximum matching covers all vertices (students). If it does, a better matching than the initial one exists; otherwise, the initial matching is optimal. This approach efficiently transforms the problem into a graph matching problem, allowing it to handle large datasets effectively.
+## Problem Description
+
+We are given $n$ (even) students. Each student $i$ has exactly $c$ ($\leq 100$) different characteristics. Given the value $f$ we have to answer the question if there exists a paring of students such that every pair shares more than $f$ characteristics.
+
+## Solution Concept
+
+We can solve this problem using Edmond's Maximum Cardinality algorithm. Given a graph $G$ this algorithm will return a pairing of adjacent vertices such that there exists no pairing with more pairs. We construct our graph by connecting every pair of students that shares more than $f$ characteristics. By sorting the characteristics of each student, we can achieve a runtime of $\mathcal{O}(n * c \ log \ c + n^2c)$ instead of $\mathcal{O}(n^2 * c^2)$ for building the graph. What remains is using Edmond's algorithm to check if a pairing of all students is possible. If so, we know that we can achieve a pairing such that every pair has more than $f$ characteristics in common.
+
 
 ### Test Results
 
