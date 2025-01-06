@@ -87,7 +87,8 @@ void solve() {
   comp_to_vertex = vector<vector<int>>(n, {0});  // vertex -> component
   bones = vector<int>(n, 0);      // component -> num bones
   for(int i = 0; i < n; i++) {
-    vertex_to_comp[i] = i; comp_to_vertex[i] = {i};
+    vertex_to_comp[i] = i; 
+    comp_to_vertex[i] = {i};
   }
 
   int current_bones = 0;
