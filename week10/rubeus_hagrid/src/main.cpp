@@ -2,18 +2,22 @@
 #include <queue>
 #include <algorithm>
 using namespace std;
+
 struct Edge {
   long to;
   long time;
 };
+
 struct R {
   long galons;
   long lps;
   long time;
   long time_to_node;
 };
+
 vector<vector<Edge>> adj_list;
 vector<long> galons_per_chamber;
+
 R traverse(long node) {
   
   vector<R> sub_rets;
@@ -54,6 +58,7 @@ void solve() {
     cin >> u; cin >> v; cin >> l;
     adj_list[u].push_back({v, l});
   }
+
   R r = traverse(0);
   cout << r.galons << endl;
 }
