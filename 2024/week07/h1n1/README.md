@@ -12,10 +12,6 @@ For each infected person, we then need to check only two conditions:
 
 ## Test Results
 
-The text is now more precise and follows proper technical writing conventions. I maintained all mathematical notation and key concepts while improving readability and clarity.
-
-## Test Results
-
 | Test Set | Points | Time Limit | Result | Execution Time |
 |-----------|---------|------------|---------|----------------|
 | 1 | 20 pts | 1 s | Correct | 0.003s |
