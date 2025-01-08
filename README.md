@@ -18,8 +18,8 @@ Each week consists of 4 exercises and 1 problem of the week (POW). Below is a ta
 | 9| [Placing Knights](2024/week09/placing_knights) | [Real Estate Market](2024/week09/real_estate) | [Canteen](2024/week09/canteen) | [Algocoon](2024/week09/algocoon/) | [Idefix](2024/week09/idefix/) |
 | 10 | [Asterix and the Tour of Gaul](2024/week10/asterix_and_the_tour_of_gaul/) | [Rubeus Hagrid](2024/week10/rubeus_hagrid/) | [San Francisco](2024/week10/san_francisco/) | [The Hand’s Tourney](2024/week10/the_hands_tourney/) | [Hermione Granger](2024/week10/hermione_granger)  |
 | 11 | [Worldcup](2024/week11/worldcup/)| [Lernaean Hydra](2024/week11/hydra/)| [Sith](2024/week11/sith) | [Asterix in Switzerland](2024/week11/asterix_in_switzerland/) | [Ceryneian Hind](2024/week11/ceryneian_hind/)|
-| 12 | [Alastor Moody](2024/week12/mad-eye-moody/) | [Return of the Jedi](2024/week12/return_of_the_jedi/) | [Rapunzel](2024/week12/rapunzel/)| | [Pied Piper](2024/week12/pied_piper/) |
-| 13 | [Car Sharing](2024/week13/car_sharing/) | [Asterix and the Chariot Race](2024/week13/asterix_chariot_race/) | [Suez](2024/week13/suez/)| | [Schneewittchen](2024/week13/schneewittchen)
+| 12 | [Alastor Moody](2024/week12/mad-eye-moody/) | [Return of the Jedi](2024/week12/return_of_the_jedi/) | [Rapunzel](2024/week12/rapunzel/)| [Nemean Lion](2024/week12/nemean_lion/)| [Pied Piper](2024/week12/pied_piper/) |
+| 13 | [Car Sharing](2024/week13/car_sharing/) | [Asterix and the Chariot Race](2024/week13/asterix_chariot_race/) | [Suez](2024/week13/suez/)| [Fighting Pits of Meereen](2024/week13/pits_of_meereen/)| [Schneewittchen](2024/week13/schneewittchen)
 | 14 | | | | | [Ludo Begman](2024/week14/ludo_begman)
 
 

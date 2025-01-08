@@ -49,4 +49,4 @@ To pass the last test, we need to optimize the code by pruning impossible states
 
 **Total Score: 100/100**
 
-What even are the fighting pits of Meereen? [Here](https://www.youtube.com/watch?v=GlXv66gFtbI&ab_channel=FirstofHisName) is a Video.
+What even are the fighting pits of Meereen? [Here](https://www.youtube.com/watch?v=GlXv66gFtbI&ab_channel=FirstofHisName) is a video.
