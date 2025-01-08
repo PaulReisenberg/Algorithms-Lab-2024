@@ -1,13 +1,5 @@
 # AlgoLab
-This repository contains my solutions to the problems from the Algorithms Lab course at ETH Zürich. Each problem follows this structure:
-
-```
-problem_name/
-├── public/           # Contains test cases
-├── src/
-│   └── main.cpp      # Solution implementation
-└── this.pdf          # Problem statement
-```
+This repository contains my solutions to the problems from the Algorithms Lab course at ETH Zürich. 
 
 ## Problems
 
