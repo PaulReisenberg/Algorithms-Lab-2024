@@ -1,10 +1,12 @@
 #include <iostream>
 #include <vector>
 #include <boost/graph/adjacency_list.hpp>
+#include <boost/graph/strong_components.hpp>
 #include <boost/graph/dijkstra_shortest_paths.hpp>
 #include <set>
 #include <queue>
 #include <map>
+
 // Graph Definition
 typedef boost::adjacency_list<
     boost::vecS,
@@ -38,12 +40,10 @@ void solve() {
   int n, m, k, T;
   cin >> n >> m >> k >> T;
   
-  vector<int> id_to_tel(T);
+  vector<int> teles(T);
   map<int, int> tel_to_id;
   for(int i = 0; i < T; i++) {
-    int tel; cin >> tel;
-    id_to_tel[i] = tel;
-    tel_to_id[tel] = i;
+    cin >> teles[i];
   }
   
   weighted_graph G(n);
@@ -51,71 +51,27 @@ void solve() {
   edge_desc e;
   for(int i = 0; i < m; i++) {
      int u, v, c; cin >> u >> v >> c;
-     // cout << "(" << u << "," << v << ")" << endl;
-     e = boost::add_edge(u, v, G).first; weights[e]=c;
+     e = boost::add_edge(v, u, G).first; weights[e]=c;
   }
   
+  std::vector<int> component_map(n);  // We MUST use such a vector as an Exterior Property Map: Vertex -> Component
+  int nscc = boost::strong_components(G,
+    boost::make_iterator_property_map(component_map.begin(), boost::get(boost::vertex_index, G)));
   
-  // Compute the links
-  vector<set<int>> id_to_links(T);
-  vector<int> visited(T, false);
-  vector<int> link_cost(T);
-  
+  vector<int> comp_count(n, -1);
   for(int i = 0; i < T; i++) {
-    queue<int> q; q.push(id_to_tel[i]);
-    vector<int> vis(n, false);
-    set<int> links;
-    
-    while(!q.empty()) {
-      int c_v = q.front(); q.pop();
-      if(vis[c_v]) continue;
-      vis[c_v] = true;
-      
-      if(tel_to_id.find(c_v) != tel_to_id.end()) {   // Tel node
-        int c_id = tel_to_id[c_v];
-        if(visited[c_id]) {
-          links.insert(id_to_links[c_id].begin(), id_to_links[c_id].end());
-          continue;
-        } else {
-          links.insert(c_id);
-        }
-      }
-      
-      adjacency_it ai_beg, ai_end;
-      for (boost::tie(ai_beg, ai_end) = boost::adjacent_vertices(c_v, G); ai_beg != ai_end; ++ai_beg) {
-          
-          q.push(*ai_beg);
-      }
-    }
-    visited[i] = true;
-    id_to_links[i] = links;
-    link_cost[i] = links.size() - 1;
-  }
-  
-  
-  // Create new Graph with reversed edges
-  weighted_graph G_2(n);
-  weight_map weights_2 = boost::get(boost::edge_weight, G_2);
-  edge_it e_beg, e_end;
-  for (boost::tie(e_beg, e_end) = boost::edges(G); e_beg != e_end; ++e_beg) {
-      int src = boost::source(*e_beg, G);
-      int trgt = boost::target(*e_beg, G);
-      e = boost::add_edge(trgt, src, G_2).first; weights_2[e]=weights[*e_beg];
+    comp_count[component_map[teles[i]]]++;
   }
 
-  // Add new edges (previously computed links)
-  for(int i = 0; i < T; i++) {
-    for(auto it = id_to_links[i].begin(); it != id_to_links[i].end(); it++) {
-      int from = id_to_tel[i];
-      int to = id_to_tel[*it];
-      if(from != to) {
-        e = boost::add_edge(from, to, G_2).first; weights[e]=link_cost[i];
-      }
-    }
+  // Add new edges
+  for(int tel : teles) {
+    weights[boost::add_edge(tel, n + component_map[tel], G).first] = 0;
+    weights[boost::add_edge(n + component_map[tel], tel, G).first] = comp_count[component_map[tel]];
   }
   
-  // Dijkstra, find closest warehouse
-  vector<int> dist_map = dijkstra_dist(G_2, n-1);
+  // Dijkstra
+  vector<int> dist_map = dijkstra_dist(G, n-1);
+  
   int min_dist = dist_map[0];
   for(int i = 1; i < k; i++)
     min_dist = min(min_dist, dist_map[i]);

@@ -7,6 +7,4 @@ Given a directed weighted graph $G=(V,E)$ with $|V|=n$ vertices and $|E|=m$ edge
 
 ## Solution Appraoch
 
-To solve this problem, we first compute the teleportation links between nodes in the teleportation network. We use a BFS approach and maintain a set of reachable teleportation nodes for each teleportation node. This optimization allows us to skip BFS traversal for previously computed nodes and instead directly add their known linked nodes to the current node's set. For each teleportation link, the weight is calculated as the total number of linked nodes minus 1.
-
-Because we have to choose the closest warehouse to the node $n-1$ it makes more sense to use Dijkstra in reverse, as we will receive a distance map containing the distance **from** one node to all the other nodes. We simply reverse all edges in the graph and compute the distance from the target node to all warehouses using Dijkstra and pick the nearest one and check if it is closer than 1,000,000.
+To solve this problem, we first compute the teleportation links between nodes in the teleportation network. This can be done by finding strongly connected components in the graph. Because we have to choose the closest warehouse to the node $n-1$ it makes more sense to use Dijkstra in reverse, as we will receive a distance map containing the distance **from** one node to all the other nodes. We simply reverse all edges in the graph and compute the distance from the target node to all warehouses using Dijkstra and pick the nearest one and check if it is closer than 1,000,000.
