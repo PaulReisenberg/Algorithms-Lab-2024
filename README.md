@@ -24,13 +24,6 @@ Each week consists of 4 exercises and 1 problem of the week (POW). Below is a ta
 
 
 
-## Past Exams
-
-| Year | Exercise 1 | Exercise 2 | Exercise 3 |
-|------|------------|------------|------------|
-|2023|todo|todo|todo|
-|2022|todo|todo|todo|
-
 
 ## Additional Problems
 
@@ -39,3 +32,6 @@ Each week consists of 4 exercises and 1 problem of the week (POW). Below is a ta
 - [New Tiles](additional/new_tiles/)
 - [Evolution](additional/evolution/)
 - [Fleet Race](additional/fleet_race)
+- [Hong Kong](additional/hong_kong/)
+- [Punch](additional/punch/)
+- [Planet Express](additional/planet_express/)
